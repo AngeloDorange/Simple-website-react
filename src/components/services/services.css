@@ -1,0 +1,56 @@
+.service{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #007fff;
+    text-align: justify;
+}
+
+.service .container{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    padding: 60px 9%;
+}
+
+.service .container .item .title{
+    display: flex;
+}
+.service .container .item .title img{
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+}
+.service .container .item .title h1{
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+.item p{
+    padding-top: 1.2rem;
+    color: #111;
+}
+
+
+.mor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+.mor .btn:hover{
+    background: #000;
+    border: none;
+}
+
+@media (max-width: 768px){
+    .service .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px){
+    .mor{
+        padding-top: 1.5rem;
+    }
+}
+

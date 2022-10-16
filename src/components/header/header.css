@@ -1,0 +1,52 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.header .content{
+    text-align: center;
+    padding-top: 17%;
+}
+.header .content h1{
+    font-size: 4rem;
+    letter-spacing: 1px;
+    color: transparent;
+    background: conic-gradient(
+        #f72f35 12%,
+        #30c5ff 12%, #30c5ff 35%,
+        #ffd700 35%, #ffd700 55%,
+        #ff69b4 55%, #ff69b4 70%,
+        #d1e231 70%, #d1e231 90%,
+        #d09ee1);
+    background-size: 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.header .content p{
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    padding-top: 1rem;
+}
+.header .content p span{
+    color: #007fff;
+}
+.content .more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    padding-top: 1rem;
+}
+
+@media (max-width: 768px){
+    .header .content h1{
+        font-size: 2.8rem;
+    }
+    .header .content p{
+        font-size: 1rem;
+    }
+}
